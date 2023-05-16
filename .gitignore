@@ -16,6 +16,10 @@ crash.*.log
 *.tfvars
 # *.tfvars.json
 
+# Plan files
+tfplan
+*.tfplan
+
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
@@ -32,3 +36,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Migration scripts
+scripts/import_repos_down_migration.sh
+scripts/import_repos_up_migration.sh
